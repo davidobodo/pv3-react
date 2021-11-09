@@ -1,0 +1,28 @@
+.navbar {
+    height: 80px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 8rem;
+    background-color: var(--darkBlue);
+
+    svg {
+        width: 88px;
+        height: 53px;
+    }
+
+    nav {
+        ul {
+            display: flex;
+            color: #fff;
+            list-style: none;
+
+            li {
+                font-size: 1.6rem;
+                margin-right: 1.5rem;
+                font-weight: 600;
+            }
+        }
+    }
+}

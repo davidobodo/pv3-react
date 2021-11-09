@@ -1,5 +1,8 @@
 import "./App.css";
 import { useEffect } from "react";
+
+import Navbar from "./components/navbar/navbar";
+import Banner from "./components/banner/Banner";
 function App() {
     useEffect(() => {
         const elem = document.querySelectorAll("li")[1];
@@ -7,11 +10,10 @@ function App() {
         console.log(elem, "THE ELEMENTS");
     }, []);
     return (
-        <ul>
-            {[1, 2, 3, 4, 5, 6].map((item) => {
-                return <li>{item}</li>;
-            })}
-        </ul>
+        <div>
+            <Navbar />
+            <Banner />
+        </div>
     );
 }
 
